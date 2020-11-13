@@ -37,13 +37,14 @@ nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  width: 40%;
+  width: 45%;
+  align-items: center;
 }
 
 nav ul li a {
   text-decoration: none;
   font-family: "Balsamiq Sans", cursive;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   background-color: transparent;
   padding: 5px 10px;
   box-sizing: border-box;
@@ -65,6 +66,29 @@ nav ul li a:hover {
 nav ul li a:hover span {
   border-bottom: none;
 }
+
+nav ul li .search-box {
+  align-items: center;
+  float: right;
+  background-color: red;
+}
+
+nav ul li .search-box input[type="text"] {
+  padding: 5px;
+  width: fit-content;
+  border: 0.3px solid grey;
+  border: none;
+}
+
+nav ul li .search-box button {
+  float: right;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  size: initial;
+  width: 30px;
+}
+
 section .container {
   position: relative;
   width: 100%;
