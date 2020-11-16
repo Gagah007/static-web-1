@@ -14,7 +14,7 @@
             <div class="logo">
                 <h1>NGODING</h1>
             </div>
-            <ul>
+            <ul id="menu">
                 <li><a href="#"><span>Home</span></a></li>
                 <li><a onclick="learnMore()" type="button">Courses</a></li>
                 <li><a onclick="learnMore()" type="button">About</a></li>
@@ -23,8 +23,11 @@
                     <input type="text" placeholder="Search" name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form></li>
-                
+
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                <i class="fa fa-bars"></i>
+              </a>
         </nav>
         <div class="container">
             <div class="content">
@@ -42,5 +45,6 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
