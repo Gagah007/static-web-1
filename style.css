@@ -89,6 +89,10 @@ nav ul li .search-box button {
   width: 30px;
 }
 
+nav a.icon {
+  display: none;
+}
+
 section .container {
   position: relative;
   width: 100%;
@@ -240,3 +244,16 @@ section .container .illustration img {
 }
 
 /* Ukuran Handphone/Mobile */
+@media screen and (max-width: 576px) {
+  nav a.icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  section .container .content {
+    padding: 30px;
+  }
+}
