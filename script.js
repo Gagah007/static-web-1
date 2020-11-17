@@ -2,12 +2,8 @@ function learnMore(){
     document.getElementById("learn").addEventListener(alert("Mohon maaf, saat ini masih dalam proses pengembangan"));
 }
 
-function hamburgerMenu(){
-    var x = document.getElementById("menu");
-    if (x.style.display === "flex"){
-        x.style.display = "none";
-    } else {
-        x.style.display = "flex";
-    }
-
-}
+const nav = document.querySelector('nav ul');
+const menu = document.querySelector('nav a.hamburgerMenu');
+menu.addEventListener('click', function(){
+    nav.classList.toggle('slide');
+})
